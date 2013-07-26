@@ -29,7 +29,7 @@ Gem::Specification.new do |s|
   ENV['PA_ORM'] ||= 'active_record'
   case ENV['PA_ORM']
   when 'active_record'
-    s.add_dependency 'activerecord', '>= 3.0'
+    s.add_dependency 'activerecord', '>= 4.1.0.beta'
   when 'mongoid'
     s.add_dependency 'mongoid',      '~> 3.0'
   when 'mongo_mapper'
